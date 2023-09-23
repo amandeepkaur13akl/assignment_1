@@ -1,5 +1,8 @@
-string=str(input("enter word that need to be reversed: "))
-revstring=""
-for i in reversed(string):
-    revstring+=i
-print(revstring)
+
+def get_reverse(string):
+    for i in string:
+        reverse = string[::-1]
+    return reverse
+string = input("Enter any string")
+res = get_reverse(string)
+print(res)
